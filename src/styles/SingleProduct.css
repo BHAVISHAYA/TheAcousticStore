@@ -1,0 +1,158 @@
+.pageNavigation a {
+    text-decoration: none;
+    color: #F16477;
+}
+
+.pageNavigation {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.singleProductPage h2 {
+    text-transform: capitalize;
+    color: #F16477;
+}
+
+.deal {
+    color: #F16477;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.proIcons {
+    font-size: 1.4rem;
+    color: #F16477;
+    background-color: rgb(221, 221, 221);
+    padding: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border : 2px solid #F16477;
+}
+
+.myImages img {
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.myImages img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.singleProductPage hr {
+    width: 100%;
+    border: 0.01rem solid black;
+    background-color: black;
+    color: black;
+}
+
+.singleProductPage .colorBtn {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 10px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.singleProductPage .colorBtn:hover {
+    opacity: 1;
+}
+
+.activeBackground {
+    opacity: 1;
+}
+
+.blurBackground {
+    opacity: 0.5;
+}
+
+.cartBtnStyle button {
+    padding: 0.59rem 0.8rem;
+    margin: 0;
+    color: #F16477;
+    border : none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-top: 3px solid #F16477;
+    border-bottom: 3px solid #F16477;
+}
+
+.cartBtnStyle .decrement {
+    border: 3px solid #F16477;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.cartBtnStyle .increment {
+    border: 3px solid #F16477;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.decrement:hover, .increment:hover {
+    background-color: #F16477;
+    color: #2A2C30;
+}
+
+.finalCartBtn {
+    background-color: #F16477;
+    color: #2A2C30;
+    padding: 0.5rem 0.8rem;
+    border: 3px solid #2A2C30;
+    font-size: 1.3rem;
+    font-weight: 550;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+
+.finalCartBtn:hover {
+    background-color: white;
+    color: #F16477;
+    border : 3px solid #F16477;
+}
+
+@media screen and (max-width : 440px) {
+    .cartBtnStyle button {
+        padding: 0.59rem 0.5rem;
+    }
+}
+
+@media screen and (max-width : 333px) {
+    .cartBtnStyle button {
+        padding: 0.59rem 0.3rem;
+    }
+}
+
+@media screen and (max-width : 282px) {
+    .cartBtnStyle button {
+        font-size: 1rem;
+        padding: 0.59rem 0.2rem;
+    }
+}

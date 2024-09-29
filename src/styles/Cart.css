@@ -1,0 +1,108 @@
+.cartPage {
+    min-height: 80vh;
+}
+
+.cartPage h1 {
+    color: #F16477;
+    text-align: center;
+    font-size: 4rem;
+    text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+}
+
+.cartPropsHeading {
+    border : 0.1px solid #F16477;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #F16477;
+    background-color: #f1e0e0;
+}
+
+.cartItems {
+    border-bottom: 0.1px solid #F16477;
+    border-left: 0.1px solid #F16477;
+    border-right: 0.1px solid #F16477;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(241, 224, 224);
+}
+
+.removeItemFromCart {
+    margin-left: 10px;
+    color: #F16477;
+    border: 2px solid #F16477;
+    padding: 0rem 0.4rem;
+    border-radius: 50%;
+    background-color: rgb(241, 224, 224);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.removeItemFromCart:hover {
+    background-color: #F16477;
+    color: white;
+}
+
+.cartProductImage {
+    height: 4rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+.cartProductName {
+    /* margin-left: -8px; */
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.cartProductColor {
+    padding: 0.1rem 0.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.cartBtns button, .shoppingBtn {
+    padding: 0.5rem 0.7rem;
+    background-color: #F16477;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 3px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+}
+
+.cartBtns button:hover, .shoppingBtn:hover {
+    background-color: white;
+    color: #F16477;
+    font-weight: 700;
+    border : 3px solid #F16477;
+}
+
+.cartTotals h2 {
+    color: #F16477;
+}
+
+.totalStyle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(69, 65, 65);
+}
+
+@media screen and (max-width : 1000px) {
+    .cartProductImage {
+        margin-left: 10px;
+    }
+}

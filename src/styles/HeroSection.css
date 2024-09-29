@@ -1,0 +1,84 @@
+/*?===================Hero section CSS Starts from here=================*/
+.heroPage {
+    background-image: linear-gradient(
+        45deg,   
+        hsl(352deg 82% 65%) 0%,
+        hsl(352deg 84% 69%) 9%,
+        hsl(352deg 85% 74%) 18%,
+        hsl(352deg 85% 78%) 27%,
+        hsl(352deg 85% 80%) 36%,
+        hsl(352deg 88% 79%) 45%,
+        hsl(352deg 91% 79%) 55%,
+        hsl(352deg 94% 78%) 64%,
+        hsl(353deg 95% 78%) 73%,
+        hsl(355deg 96% 79%) 82%,
+        hsl(358deg 96% 80%) 91%,
+        hsl(0deg 96% 81%) 100%
+    );
+}
+
+.heroPage .row {
+    padding: 9rem 3rem 7rem 3rem;
+}
+
+.heroPage button {
+    background-color: #1A2130;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 4px #1A2130;
+}
+.heroPage button:hover {
+    background-color: white;
+    color: #1A2130;
+    border : 3px solid #1A2130;
+    font-weight: 700;
+}
+
+#firstLine {
+    font-size: 1.3rem;
+}
+#secondLine {
+    font-size: 4rem;
+}
+
+@media screen and (max-width : 650px) {
+    #secondLine {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    #secondLine {
+        font-size: 2.5rem;
+        text-align: start;
+    }
+}
+
+
+/**===============Shape Divider Starts from here==============*/
+.custom_shape_divider_bottom_1719047206 {
+    margin-top: -101px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom_shape_divider_bottom_1719047206 svg {
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 107px;
+}
+
+.custom_shape_divider_bottom_1719047206 .shape_fill {
+    fill: #F4EEEE;
+}
+/**===============Shape Divider Ends here==============*/
+
+/*?================Hero section CSS Ends here=================*/

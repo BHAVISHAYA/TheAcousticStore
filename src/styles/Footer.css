@@ -1,0 +1,43 @@
+/*?================Footer CSS starts here=================*/
+.footer {
+    /* background-color: #2a2c30; */
+    background-color: #F16477;
+    color: #2a2c30;
+  }
+
+  .footer p {
+    font-size: 1.1rem;
+  }
+  
+  .footer input {
+    border: none;
+    outline: none;
+    background-color: #FFF1DB;
+    border-bottom: 1px solid #e7d6d6;
+    padding: 0.7rem 0.5rem;
+    color: #F16477;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    color: #2a2c30;
+    font-size: 1.1rem;
+  }
+  
+  .author {
+    /* background-color: #2a2c30; */
+    background-color: #F16477;
+    color: #2a2c30;
+    border-top: 0.1px solid white;
+}
+  /*?================Footer CSS ends here=================*/
+  

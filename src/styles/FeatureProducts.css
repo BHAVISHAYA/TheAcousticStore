@@ -1,0 +1,53 @@
+/*?================Products page CSS Starts from here=================*/
+.products img {
+    rotate: 8deg;
+  }
+  
+  .products {
+    color: #2a2c30;
+    background-color: #F4EEEE;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .laptop,
+  .headphone,
+  .mobile {
+    background-color: hsl(0, 0%, 94%);
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .laptop:hover,
+  .headphone:hover,
+  .mobile:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: white;
+  }
+  
+  .discount {
+    color: #F06476;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .products button {
+    border: none;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #2a2c30;
+  }
+  
+  .products button:hover {
+    color: #F37686;
+    border-bottom: 2px solid #F37686;
+  }
+  /*?================Products page CSS ends here=================*/

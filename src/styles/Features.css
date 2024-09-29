@@ -1,0 +1,18 @@
+/*?================Feature's page CSS Starts from here=================*/
+.features {
+    font-size: 1.1rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    background-color: #F4EEEE;
+  }
+  
+  .features i {
+    font-size: 3rem;
+    color: #F16578;
+  }
+  
+  .f {
+    padding-left: 3rem;
+  }
+  /*?================Feature's page CSS ends here=================*/
+  

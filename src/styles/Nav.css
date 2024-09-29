@@ -1,0 +1,184 @@
+.navBar {
+    /* background-color: #1A2130; */
+    background-color: #FFF1DB;
+    /* color: #83B4FF; */
+    color: #EF5A6F;
+    position: fixed;
+    top: 0%;
+    z-index: 5;
+}
+
+.navBar .menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar .menuItem {
+    padding: 1rem;
+    text-decoration: none;
+    color: #EF5A6F;
+    font-size: 1rem;
+}
+
+.navBar .menuItem:hover {
+    background-color: #EF5A6F;
+    color: #FFF1DB;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navBar .menuItem_button {
+    padding: 1rem;
+}
+
+.navBar button {
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: #EF5A6F;
+    color: #FFF1DB;
+    margin-left: 0.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navBar button:hover {
+    background-color: #FFF1DB;
+    color: #EF5A6F;
+    border: 3px solid #EF5A6F;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navBar i {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.navBar span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    position: absolute;
+    top: -80%;
+    left: 60%;
+    background-color: #EF5A6F;
+    color: #FFF1DB;
+    padding: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.mobileView {
+    display: none;
+    position : absolute;
+    z-index: 1;
+    background-color: #EF5A6F;
+    border-radius: 2rem;
+    border: 4px solid #FFF1DB;
+    padding: 2rem;
+    top: 120%;
+    right: 9%;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    animation-name: example;
+    animation-duration: 0.7s;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #FFF1DB;
+    list-style: none;
+    text-align: center;
+}
+
+.mobileMenuItem {
+    color: #FFF1DB;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.mobileMenuItem:hover {
+    background-color: #FFF1DB;
+    color: #EF5A6F;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.navBar .fa-xmark {
+    display: none;
+    font-size: 1.8rem;
+}
+
+.navBar .fa-bars {
+    display: none;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width : 850px) {
+    .navBar .mobileView {
+        display: flex;
+    }
+    .navBar .menu {
+        display: none;
+    }
+    .navBar .fa-bars {
+        display: block;
+    }
+    .navBar .fa-xmark {
+        display: block;
+    }
+    .navBar span {
+        background-color: #FFF1DB;
+        color: #EF5A6F;
+    }
+    .mobileMenuItem_button button {
+        background-color: #FFF1DB;
+        color: #EF5A6F;
+        margin-top: -30px;
+    }
+    .mobileMenuItem_button button:hover {
+        background-color: #EF5A6F;
+        color: #FFF1DB;
+        border : 4px solid #FFF1DB;
+    }
+}
+
+@keyframes example {
+    from {height: 1vh; margin: 0px; padding: 0px;} 
+    to {height: 420px;}
+}
