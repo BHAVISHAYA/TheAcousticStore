@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "../styles/HeroSection.css";
 
 export const HeroSection = () => {
@@ -16,7 +17,9 @@ export const HeroSection = () => {
                         <p style={{ fontSize : "1.2rem", color : "white" }}>
                             Welcome to Acoustic eComStore, your ultimate destination for cutting-edge gadgets! Explore the latest in tech innovation and style with us. Shop now and discover a world of possibilities!
                         </p>
-                        <button>Explore Our Products</button>
+                        <NavLink to="/products">
+                            <button>Explore Our Products</button>
+                        </NavLink>
                     </div>
                     <div className="col-lg-6">
                         <img className="img-fluid" src="/Images/heroSection.svg" alt="" />
