@@ -1,7 +1,11 @@
 import React from 'react';
 import "../styles/Contact.css";
+import { useAuth0 } from '@auth0/auth0-react';
 
 export const Contact = () => {
+
+    const { isAuthenticated, user } = useAuth0();
+
     return (
         <>
             <div className="container-fluid contact jost py-5 mt-5">
@@ -21,10 +25,10 @@ export const Contact = () => {
                         <br />
                         <form action="https://formspree.io/f/xqazoplq" method='POST' className='form-group'>
                             <label htmlFor="">First Name <span>*</span> </label>
-                            <input type="text" className='form-control' name='FirstName' required autoComplete='off' placeholder="Type your first name" />
+                            <input type="text" className='form-control' name='FirstName' required autoComplete='off' placeholder="Type your first name" value={isAuthenticated ? user.nickname : ""} />
                             <br />
                             <label htmlFor="">Last Name <span>*</span> </label>
-                            <input type="text" className='form-control' name='LastName' required autoComplete='off' placeholder="Type your last name" />
+                            <input type="text" className='form-control' name='LastName' required autoComplete='off' placeholder="Type your last name" value={isAuthenticated ? user.nickname : ""} />
                             <br />
                             <label htmlFor="">Message</label>
                             <textarea name="Message" id="Message" placeholder='Enter your message' className='form-control'></textarea>

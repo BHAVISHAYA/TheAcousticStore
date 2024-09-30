@@ -39,23 +39,23 @@ export const MainMenu = (props) => {
                 {
                     isAuthenticated ? 
                     <li>
-                        <NavLink className={screenType === "Window" ? "menuItem_button" : "mobileMenuItem_button"} onClick={() => {setToggle(!toggle)}}>
+                        <NavLink className={screenType === "Window" ? "menuItem_button" : "mobileMenuItem_button"}>
                             <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
                                 LogOut
                             </button>
                         </NavLink>
                     </li> :
                     <li>
-                        <NavLink className={screenType === "Window" ? "menuItem_button" : "mobileMenuItem_button"} onClick={() => {setToggle(!toggle)}}>
+                        <NavLink className={screenType === "Window" ? "menuItem_button" : "mobileMenuItem_button"}>
                             <button onClick={() => loginWithRedirect()}>LogIn</button>
                         </NavLink>
                     </li> 
                 }
                 {
                     isAuthenticated && 
-                    <li>
-                       <span className={screenType === "Window" ? "menuItem_button" : "mobileMenuItem_button"}> {user.name} </span> 
-                    </li>
+                    <h5 className={`mx-3 text-center ${screenType === "Window" ? "pinkColor" : "whiteColor"}`}>
+                        <img src={user.picture} alt="userPicture" style={{borderRadius : "50%" ,height: "50px"}} />
+                    </h5>
                 }
             </ul>
         </>

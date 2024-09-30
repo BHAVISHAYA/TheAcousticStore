@@ -149,6 +149,14 @@
     font-size: 1.8rem;
 }
 
+.pinkColor {
+    color: #EF5A6F;
+}
+
+.whiteColor {
+    color : #FFF1DB;
+}
+
 @media screen and (max-width : 850px) {
     .navBar .mobileView {
         display: flex;
@@ -180,5 +188,5 @@
 
 @keyframes example {
     from {height: 1vh; margin: 0px; padding: 0px;} 
-    to {height: 420px;}
+    to {height: 482px;}
 }

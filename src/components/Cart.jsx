@@ -4,11 +4,12 @@ import { CartItems } from './CartItems';
 import { NavLink } from 'react-router-dom';
 import FormatPrice from "../Helpers/FormatPrice.jsx";
 import { useCartContext } from '../context/cart_context';
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 export const Cart = () => {
 
-    console.log("Cart Page");
+    const { isAuthenticated, user } = useAuth0();
 
     const { cart, clearCart, total_price, shipping_fee } = useCartContext();
 
@@ -33,6 +34,13 @@ export const Cart = () => {
     return (
         <div className="container-fluid py-5 mt-5 cartPage">
             <div className="row justify-content-center align-items-center">
+                {
+                    isAuthenticated && 
+                    <div className="col-11 mt-3 d-flex gap-3 align-items-center">
+                        <img src={user.picture} alt="userPicture" style={{borderRadius : "50%", height : "70px", border : "3px solid white"}} />
+                        <h2 style={{color : "#EF5A6F"}}> { user.name } </h2>
+                    </div>
+                }
                 <h1>CART</h1>
                 <div className="col-11 mt-5 pt-2 cartPropsHeading">
                     <div className="row text-center">
