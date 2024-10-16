@@ -10,9 +10,6 @@ import { Auth0Provider } from '@auth0/auth0-react';
 const domainName = import.meta.env.VITE_AUTH_DOMAIN;
 const clientId = import.meta.env.VITE_CLIENT_ID;
 
-// domain="dev-u4635ba44bcf6cii.us.auth0.com"
-// clientId="lvkvWiJsxUJAFkclHcE0ZVrVmjpDmA7G"
-
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Auth0Provider
         domain={domainName}
