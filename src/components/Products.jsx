@@ -8,7 +8,7 @@ import "../styles/Products.css";
 export const Products = () => {
     return (
         <>
-            <div className="container-fluid jost productPage py-5 mt-5">
+            <div className="container-fluid jost productPage mt-5">
                 <div className="row justify-content-center">
                     <div className="col-md-3 col-11 pt-3">
                         <FilterSection />

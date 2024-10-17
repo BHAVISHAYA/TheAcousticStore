@@ -1,3 +1,7 @@
+.productPage {
+    padding-top: 4rem;
+}
+
 .productPage a {
     text-decoration: none;
     color: black;
@@ -268,6 +272,12 @@
     border : 3px solid #F16477;
 }
 
+@media screen and (max-width : 1105px) {
+    .productPage {
+        padding-top: 5.6rem;
+    }
+}
+
 @media screen and (max-width: 993px) {
     .desc_2 p {
         margin-top: -1rem;
@@ -311,6 +321,9 @@
 }
 
 @media screen and (max-width: 400px) {
+    .productPage {
+        padding-top: 4.5rem;
+    }
     .productStyle {
         width: 43vw;
     }
